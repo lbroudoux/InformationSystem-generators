@@ -29,10 +29,9 @@
 [/template]
 
 [query public isPrimitiveType(aType : Type) : Boolean =
-	aType.name.equalsIgnoreCase('String')
-	or aType.name.equalsIgnoreCase('Integer') /]
+	aType.oclIsTypeOf(PrimitiveType) /]
 
-[template protected convertPrimitiveToXsdType(aType : Type) post (trim())]
+[template public convertPrimitiveToXsdType(aType : Type) post (trim())]
 [if (aType.name = 'String')]
 string
 [elseif (aType.name = 'Integer')]

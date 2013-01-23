@@ -24,6 +24,8 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 
+import com.github.lbroudoux.acceleo.soa.contracts.services.NamespaceServices;
+
 /**
  * Entry point of the 'GenerateAll' generation module.
  *
@@ -335,13 +337,16 @@ public class GenerateAll extends AbstractAcceleoGenerator {
      * 
      * @param resourceSet
      *            The resource set which registry has to be updated.
-     * @generated
+     * @generated NOT
      */
     @Override
     public void registerPackages(ResourceSet resourceSet) {
         super.registerPackages(resourceSet);
         if (!isInWorkspace(org.obeonetwork.dsl.overview.OverviewPackage.class)) {
             resourceSet.getPackageRegistry().put(org.obeonetwork.dsl.overview.OverviewPackage.eINSTANCE.getNsURI(), org.obeonetwork.dsl.overview.OverviewPackage.eINSTANCE);
+            resourceSet.getPackageRegistry().put(org.obeonetwork.dsl.soa.SoaPackage.eINSTANCE.getNsURI(), org.obeonetwork.dsl.soa.SoaPackage.eINSTANCE);
+            resourceSet.getPackageRegistry().put(org.obeonetwork.dsl.entity.EntityPackage.eINSTANCE.getNsURI(), org.obeonetwork.dsl.entity.EntityPackage.eINSTANCE);
+            resourceSet.getPackageRegistry().put(org.obeonetwork.dsl.cinematic.CinematicPackage.eINSTANCE.getNsURI(), org.obeonetwork.dsl.cinematic.CinematicPackage.eINSTANCE);
         }
         
         /*

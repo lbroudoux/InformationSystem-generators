@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="serviceWsdl" name="com.github.lbroudoux.acceleo.soa.contracts">
-    <property name="ECLIPSE_HOME" value="../../../../sts-2.9.2-RELEASE-obeo"/>
-    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+    <property name="ECLIPSE_HOME" value="../../../../../sts-2.9.2-RELEASE-obeo"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../../../workspaces/sts-2.9.2-RELEASE-obeo"/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="com.github.lbroudoux.acceleo.soa.contracts.libraryclasspath">
@@ -28,6 +28,7 @@
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.net4j.util_3.1.1.v20111210-0952.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.obeonetwork.dsl.overview_2.3.0.201301071433.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.obeonetwork.dsl.entity_2.3.0.201301071433.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.obeonetwork.dsl.cinematic_3.0.0.201301071433.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.1.0.v20120206-0606.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.1.2.v20111015-2027.jar"/>

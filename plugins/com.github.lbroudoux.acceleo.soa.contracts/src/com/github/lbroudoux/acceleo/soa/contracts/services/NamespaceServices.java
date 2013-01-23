@@ -16,7 +16,7 @@ public class NamespaceServices{
    
    private static Integer namespaceCounter = 1;
    
-   private static Map<Category, String> namespacePrefix = new HashMap<Category, String>();
+   private static Map<String, String> namespacePrefix = new HashMap<String, String>();
    
    
    /** The constructor. */
@@ -24,6 +24,11 @@ public class NamespaceServices{
       // prevent instantiation.
    }
 
+   public static void resetNamespaces(){
+      namespaceCounter = 1;
+      namespacePrefix.clear();
+   }
+   
    public static String getTargetNamespace(Service service){
       StringBuilder result = new StringBuilder(getNamespacePrefix());
       // First add system name if any.
@@ -56,18 +61,18 @@ public class NamespaceServices{
    }
    
    public static String getNamespacePrefix(Category category){
-      String nsPrefix = namespacePrefix.get(category);
+      String nsPrefix = namespacePrefix.get(category.getName());
       if (nsPrefix == null){
          synchronized (namespaceCounter){
             nsPrefix = "ns" + namespaceCounter;
-            namespacePrefix.put(category, nsPrefix);
+            namespacePrefix.put(category.getName(), nsPrefix);
             namespaceCounter++;
          }
       }
       return nsPrefix;
    }
    
-   private static String getNamespacePrefix(){
+   public static String getNamespacePrefix(){
       return java.lang.System.getProperty(NAMESPACE_PREFIX_KEY, "http://www.github.com");
    }
 }
