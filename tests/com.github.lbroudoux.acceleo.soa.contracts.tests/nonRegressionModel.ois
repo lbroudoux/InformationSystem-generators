@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overview:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cinematic="http://www.obeonetwork.org/dsl/cinematic/3.0.0" xmlns:oent="http://www.obeonetwork.org/dsl/entity/2.0.0" xmlns:oenv="http://www.obeonetwork.org/dsl/environment/2.0.0" xmlns:org.obeonetwork.dsl.soa="http://www.obeonetwork.org/dsl/soa/2.0.0" xmlns:overview="http://www.obeonetwork.org/dsl/overview/2.0.0" xmi:id="_g_yQsG7wEeKSCLBXYLbfmA" createdOn="2013-02-04T18:30:05.984+0100" modifiedOn="2013-02-04T18:30:06.012+0100">
+  <ownedElements xsi:type="oent:Root" xmi:id="_g_yQsW7wEeKSCLBXYLbfmA" createdOn="2013-02-04T23:55:49.885+0100" modifiedOn="2013-02-04T23:55:49.885+0100">
+    <blocks xmi:id="_BQsS0G8eEeKSCLBXYLbfmA" createdOn="2013-02-04T23:55:49.889+0100" modifiedOn="2013-02-04T23:56:19.157+0100" name="Block_1">
+      <entities xmi:id="_Fn2gUG8eEeKSCLBXYLbfmA" createdOn="2013-02-04T23:56:19.157+0100" modifiedOn="2013-02-05T20:35:17.867+0100" name="Entity_1">
+        <ownedAttributes xmi:id="_CILL0G_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:34:18.637+0100" modifiedOn="2013-02-05T20:35:03.947+0100" name="attribute1">
+          <type href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5F-EKwKEd2XLNOhkJIazw"/>
+        </ownedAttributes>
+        <ownedAttributes xmi:id="_K9CTsG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:35:17.867+0100" modifiedOn="2013-02-05T20:35:29.857+0100" name="attribute2" multiplicity="1">
+          <type href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5FXAawKEd2XLNOhkJIazw"/>
+        </ownedAttributes>
+      </entities>
+    </blocks>
+  </ownedElements>
+  <ownedElements xsi:type="org.obeonetwork.dsl.soa:System" xmi:id="_g_yQsm7wEeKSCLBXYLbfmA" createdOn="2013-02-04T18:33:10.411+0100" modifiedOn="2013-02-05T20:50:52.033+0100" name="NonRegressionSystem">
+    <ownedComponents xmi:id="_uJOUoG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:39:14.027+0100" modifiedOn="2013-02-05T20:39:27.687+0100" name="Component_1">
+      <ownedServices xmi:id="_wLgVcG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:39:27.689+0100" modifiedOn="2013-02-05T20:39:46.627+0100" name="ProvidedService1">
+        <ownedInterface xmi:id="_zAIZMG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:39:46.628+0100" modifiedOn="2013-02-05T20:40:13.299+0100" name="ProvidedService1">
+          <ownedOperations xmi:id="_zAJnUG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:39:46.630+0100" modifiedOn="2013-02-05T20:41:27.345+0100" name="requestResponse">
+            <input xmi:id="_6vjjAG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:40:38.579+0100" modifiedOn="2013-02-05T20:41:10.728+0100" type="_PlyngG_LEeKcOPDdXffG5A" name="entity"/>
+            <input xmi:id="_AtTT0G_MEeKcOPDdXffG5A" createdOn="2013-02-05T20:41:18.606+0100" modifiedOn="2013-02-05T20:41:36.829+0100" name="primitiveString">
+              <type xsi:type="oenv:PrimitiveType" href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5F-EKwKEd2XLNOhkJIazw"/>
+            </input>
+            <output xmi:id="_CApyEG_MEeKcOPDdXffG5A" createdOn="2013-02-05T20:41:27.348+0100" modifiedOn="2013-02-05T20:42:08.214+0100" type="_if6YIG8bEeKSCLBXYLbfmA" name="output1"/>
+          </ownedOperations>
+          <ownedOperations xmi:id="_2-fsMG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:40:13.300+0100" modifiedOn="2013-02-05T20:42:17.433+0100" name="oneWay" kind="ONE_WAY">
+            <input xmi:id="_JeVEkG_MEeKcOPDdXffG5A" createdOn="2013-02-05T20:42:17.434+0100" modifiedOn="2013-02-05T20:42:40.906+0100" type="_fyEo4G_LEeKcOPDdXffG5A" name="composite"/>
+          </ownedOperations>
+        </ownedInterface>
+      </ownedServices>
+    </ownedComponents>
+    <ownedDtoRegistry xmi:id="_8eXFsG7wEeKSCLBXYLbfmA" createdOn="2013-02-04T18:34:32.155+0100" modifiedOn="2013-02-04T18:34:37.692+0100">
+      <ownedCategories xmi:id="_Ip7qsG7xEeKSCLBXYLbfmA" description="Category_1 description" createdOn="2013-02-04T18:34:32.162+0100" modifiedOn="2013-02-05T20:46:53.562+0100" name="Category_1">
+        <types xsi:type="org.obeonetwork.dsl.soa:ServiceDTO" xmi:id="_if6YIG8bEeKSCLBXYLbfmA" createdOn="2013-02-04T23:38:04.450+0100" modifiedOn="2013-02-05T20:36:49.784+0100" name="BasicDTO">
+          <ownedAttributes xmi:id="_WsVMYG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:36:36.646+0100" modifiedOn="2013-02-05T20:36:43.118+0100" name="foo">
+            <type href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5F-EKwKEd2XLNOhkJIazw"/>
+          </ownedAttributes>
+          <ownedAttributes xmi:id="_Ypn_gG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:36:49.784+0100" modifiedOn="2013-02-05T20:36:59.916+0100" name="bar" multiplicity="1">
+            <type href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5FXAawKEd2XLNOhkJIazw"/>
+          </ownedAttributes>
+        </types>
+        <types xsi:type="org.obeonetwork.dsl.soa:ServiceDTO" xmi:id="_PlyngG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:35:48.984+0100" modifiedOn="2013-02-05T20:35:48.986+0100" name="Entity_1DTO" associatedTypes="_Fn2gUG8eEeKSCLBXYLbfmA"/>
+        <ownedCategories xmi:id="_KPSe8G7xEeKSCLBXYLbfmA" createdOn="2013-02-04T18:34:42.785+0100" modifiedOn="2013-02-05T20:36:11.203+0100" name="SubCategory_1">
+          <types xsi:type="org.obeonetwork.dsl.soa:ServiceDTO" xmi:id="_S5raIG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:36:11.203+0100" modifiedOn="2013-02-05T20:37:04.776+0100" name="BasicExtDTO" supertype="_if6YIG8bEeKSCLBXYLbfmA">
+            <ownedAttributes xmi:id="_a4mYgG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:37:04.776+0100" modifiedOn="2013-02-05T20:37:23.172+0100" name="qix" multiplicity="0..*">
+              <type href="platform:/plugin/org.obeonetwork.dsl.environment.common/model/obeo.environment#_s5F-EKwKEd2XLNOhkJIazw"/>
+            </ownedAttributes>
+          </types>
+        </ownedCategories>
+      </ownedCategories>
+      <ownedCategories xmi:id="_JevLwG7xEeKSCLBXYLbfmA" description="Category_2 description" createdOn="2013-02-04T18:34:37.696+0100" modifiedOn="2013-02-05T20:47:11.615+0100" name="Category_2">
+        <types xsi:type="org.obeonetwork.dsl.soa:ServiceDTO" xmi:id="_fyEo4G_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:37:37.646+0100" modifiedOn="2013-02-05T20:38:37.843+0100" name="CompositeDTO">
+          <ownedReferences xmi:id="_ieiPIG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:37:55.730+0100" modifiedOn="2013-02-05T20:38:06.237+0100" name="basics" multiplicity="0..*" navigable="true" type="_if6YIG8bEeKSCLBXYLbfmA"/>
+          <ownedReferences xmi:id="_owJ-MG_LEeKcOPDdXffG5A" createdOn="2013-02-05T20:38:37.843+0100" modifiedOn="2013-02-05T20:38:50.873+0100" name="basicExt" multiplicity="1" isComposite="true" navigable="true" type="_S5raIG_LEeKcOPDdXffG5A"/>
+        </types>
+      </ownedCategories>
+    </ownedDtoRegistry>
+  </ownedElements>
+  <ownedElements xsi:type="cinematic:CinematicRoot" xmi:id="_g_y3wG7wEeKSCLBXYLbfmA"/>
+</overview:Root>

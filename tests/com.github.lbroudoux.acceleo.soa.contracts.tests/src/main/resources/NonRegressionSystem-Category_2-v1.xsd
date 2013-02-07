@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.github.com/Category_2" xmlns:tns="http://www.github.com/Category_2"
+    xmlns:ns1="http://www.github.com/Category_1"
+    xmlns:ns2="http://www.github.com/Category_1/SubCategory_1"
+>
+  <xs:import schemaLocation="NonRegressionSystem-Category_1-v1.xsd" namespace="http://www.github.com/Category_1"></xs:import>
+  <xs:import schemaLocation="NonRegressionSystem-SubCategory_1-v1.xsd" namespace="http://www.github.com/Category_1/SubCategory_1"></xs:import>
+  <xs:annotation>
+    <xs:documentation>
+      Category_2 description
+    </xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="CompositeDTO">
+      <xs:sequence>
+        <xs:element name="basicss">
+          
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="basics" type="ns1:BasicDTO" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="basicExt" type="ns2:BasicExtDTO" >
+          
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+</xs:schema>
