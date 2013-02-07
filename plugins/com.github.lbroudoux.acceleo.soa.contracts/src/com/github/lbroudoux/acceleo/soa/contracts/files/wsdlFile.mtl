@@ -7,7 +7,7 @@
 [import com::github::lbroudoux::acceleo::soa::contracts::services::namespaceServices/]
 
 
-[template public genFullPathFile(aService : Service)]
+[template public genFullPathFile(aService : Service) post (trim())]
 [if (aService.version.oclIsUndefined())]
 	[aService.name.concat('.wsdl')/]
 [else]
